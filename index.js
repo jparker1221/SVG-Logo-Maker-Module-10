@@ -27,8 +27,8 @@ const questions = [
   }
 ]
 
-function writeToFile(data) {
-  fs.writeFile('./examples/logo.svg', data, (err) => {
+function writeToFile(fileName, data) {
+  fs.writeFile(`./examples/${fileName}-logo.svg`, data, (err) => {
     if (err) throw err;
     console.log('SVG logo successfully generated!')
   })
@@ -36,7 +36,29 @@ function writeToFile(data) {
 
 function init() {
   inquirer.prompt(questions).then((data) => {
-    writeToFile('logo.svg', data)
+    let svg;
+    if (data.logoShape === 'circle') {
+      svg = new Circle(data.logoText, data.textColor, data.shapeColor)
+    }
+    else if (data.logoShape === 'triangle') {
+      svg = new Triangle(data.logoText, data.textColor, data.shapeColor)
+    }
+    else {
+      svg = new Square(data.logoText, data.textColor, data.shapeColor)
+    }
+    const logo = `<svg version="1.1"
+    width="500" height="500"
+    xmlns="http://www.w3.org/2000/svg">
+
+${svg.render()}
+
+ <text x="250" y="250" font-size="60" text-anchor="middle" fill="${svg.textColor}">${svg.logoText}</text>
+
+</svg>`
+
+
+
+    writeToFile(data.logoShape, logo)
   })
 }
 
