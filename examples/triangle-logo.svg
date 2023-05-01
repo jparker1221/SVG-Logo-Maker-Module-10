@@ -2,8 +2,8 @@
     width="500" height="500"
     xmlns="http://www.w3.org/2000/svg">
 
-<polygon points="50 15, 100 100, 0 100" stroke="green" fill="green" stroke-width="5"/>
+<polygon points="100,325 400,325, 250,125" stroke="green" fill="green" stroke-width="5"/>
 
- <text x="250" y="275" font-size="60" text-anchor="middle" fill="yellow">JRP</text>
+ <text x="250" y="275" font-size="60" text-anchor="middle" fill="white">JRP</text>
 
 </svg>
