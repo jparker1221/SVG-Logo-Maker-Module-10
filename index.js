@@ -52,11 +52,9 @@ function init() {
 
 ${svg.render()}
 
- <text x="250" y="250" font-size="60" text-anchor="middle" fill="${svg.textColor}">${svg.logoText}</text>
+ <text x="250" y="275" font-size="60" text-anchor="middle" fill="${svg.textColor}">${svg.logoText}</text>
 
 </svg>`
-
-
 
     writeToFile(data.logoShape, logo)
   })
