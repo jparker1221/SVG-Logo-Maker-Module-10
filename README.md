@@ -23,6 +23,10 @@ Download the .zip file or clone the repository into your source-code editor. Nav
 
 Open the repository in an integrated terminal. Enter "node index.js" in the command-line and answer the prompted questions to generate your SVG logo.
 
+### Walkthrough Video
+
+[Click here to watch](https://drive.google.com/file/d/1WXdjC0Gu5RVGnwIyWsI9wP4kfInz3bBb/view)
+
 ## License
 
 This application is covered under the MIT License. For more information about this license, visit https://opensource.org/license/mit/.

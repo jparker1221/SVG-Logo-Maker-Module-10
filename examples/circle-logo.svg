@@ -4,6 +4,6 @@
 
 <circle cx="250" cy="250" r="100" stroke="green" fill="green" stroke-width="5"/>
 
- <text x="250" y="275" font-size="60" text-anchor="middle" fill="yellow">JRP</text>
+ <text x="250" y="275" font-size="60" text-anchor="middle" fill="white">JRP</text>
 
 </svg>
